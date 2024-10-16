@@ -17,11 +17,13 @@ public class DrawBullsEyesDebugApp {
 			for (DrawCase drawCase : DrawBullsEyes.getCases()) {
 				StdDraw.clear();
 				drawCase.draw();
+				
 				Object[] options = { "Continue", "Exit" };
 				if (DialogBoxes.askUser(drawCase.getText(), DrawBullsEyesDebugApp.class.getSimpleName(),
 						JOptionPane.QUESTION_MESSAGE, options)) {
 					//pass
 				} else {
+					
 					break;
 				}
 			}
